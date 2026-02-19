@@ -2,3 +2,39 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Fonts */
+  --main-font: "IBM Plex mono", monospace;
+  --main-font-weight-regular: 400;
+  --main-font-weight-bold: 700;
+
+  /* Dark Theme Colors */
+  --accent-color: #ff0070;
+  --main-text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+  --button-text-color: var(--accent-color);
+  --decorated-zone-color: var(--accent-color);
+  --link-shadow-color: var(--accent-color);
+
+  /* Light Theme Colors (will be overridden) */
+  --accent-color-light: #ff8dcb;
+  --main-text-color-light: #353430;
+  --title-color-light: #ffc2e6;
+  --bg-color-light: #fff1f7;
+  --bg-image-light: url(../images/cover-image-light.png);
+  --button-text-color-light: var(--main-text-color-light);
+  --decorated-zone-color-light: var(--main-text-color-light);
+  --link-shadow-color-light: var(--accent-color-light);
+
+  /* Layout */
+  --main-padding: 10px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --main-padding: 20px;
+  }
+}
